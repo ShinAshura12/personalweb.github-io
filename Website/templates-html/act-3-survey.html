@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="act-2.css">
+    </head>
+    <body>
+        <a href="#" onclick="window.top.close();return false;">close</a>
+        <div class="main-container">
+            <form class="form-design" action="act-2-guestbook.html" method="GET">
+                <h1>Survey Form</h1>
+                <span>BY: Carl Jefferson D. Lapena</span>
+            <div>
+                <input type="text" class="text" name="Name" id="Name" placeholder="Last Name" required>
+                <input type="text" class="text" name="Course" id="Course" placeholder="Course" required>
+            </div>
+            <br>
+            <div class="gender-selection">
+                <label for="">What is your gender?</label>
+                <input id="A-r" name="Gender" type="radio">
+                <label for="A-r">Male</label>
+                <input id="B-r" name="Gender" type="radio">
+                <label for="B-r">Female</label>
+                <input id="C-r" name="Gender" type="radio">
+                <label for="C-r">Unkown</label>
+            </div>
+            <br>
+            <div class="personality-selection">
+                <label for="choices">What is your personality?</label>
+                <select name="personality" id="choices">
+                    <option class="p-option" value="Kind">Kind</option>
+                    <option class="p-option" value="Mean">Mean</option>
+                    <option class="p-option" value="Annoying">Annoying</option>
+                    <option class="p-option" value="Rebel">Rebel</option>
+                </select>
+            </div>
+            <br>
+            <div id="checkbox-question" class="many-selection">
+                <label for="checkbox-question">What games have you played?</label>
+                <br>
+                <input name="Genshin Impact" id="A" type="checkbox">
+                <label for="A">Genshin Impact</label><br>
+                <input name="Arknight" id="B" type="checkbox">
+                <label for="B">Arknight</label><br>
+                <input name="Call of Duty" id="C" type="checkbox">
+                <label for="C">Call of Duty</label><br>
+                <input name="Minecraft" id="D" type="checkbox">
+                <label for="D">Minecraft</label><br>
+                <input name="Roblox" id="E" type="checkbox">
+                <label for="E">Roblox</label><br>
+                <input name="All of the choices" id="F" type="checkbox">
+                <label for="F">All of the choices</label>
+            </div>    
+            <br>        
+            <div>
+                <textarea name="Daily_life_in_one_sentence" id="textarea" cols="45" rows="3">Define your day.</textarea>
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit">
+            </div>   
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    background-image: linear-gradient(to right, azure 55%, rgb(53, 125, 134));
+}
+
+a {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.2);
+    font-size: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.9 ease-in;
+}
+
+a:hover {
+    opacity: 0.2;
+    scale: 0.9;
+}
+
+
+.container-table {
+    position: absolute;
+    left: 85px;
+    margin: auto;
+    background-color: whitesmoke;
+    height: 350px;
+    width: 350px;
+    box-sizing: content-box;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px 5px rgba(0,0,0,0.3);
+}
+.table-header {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px 10px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px 8px  rgba(0,0,0,0.33);
+}
+.table-days {
+    font-weight: bold;
+}
+.table-holiday-bday {
+    background-image: linear-gradient(to left, blue, yellow);
+    color: white;
+}
+.table-holiday-bday:hover::after {
+    cursor: pointer;
+    color: yellow;
+    content: attr(title);
+    font-size: smaller;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.table-holiday {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.table-holiday:hover::after {
+    color: yellow;
+    content: attr(title);
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.table-past-day {
+    color: lightgray;
+}
+
+td {
+    text-align: center;
+}
